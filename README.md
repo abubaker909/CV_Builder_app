@@ -16,7 +16,7 @@ This Android app allows users to input and store personal information for buildi
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/cv-builder-android.git
+   https://github.com/abubaker909/CV_Builder_app.git
    ```
 
 2. **Open in Android Studio:**
