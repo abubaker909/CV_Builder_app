@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8396A8"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:text="CV BUILDER"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:background="@color/material_dynamic_tertiary70"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <EditText
+            android:id="@+id/rollnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:hint="Roll Number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#D5DADD" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rollnumber"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#D5DADD"
+            android:hint="Name"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/Cgpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:hint="CGPA"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#D5DADD" />
+
+        <Spinner
+            android:id="@+id/spinnerDegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cgpa"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#D5DADD" />
+
+
+        <!-- Gender (Radio Button) -->
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerDegree"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:checked="true"
+                android:padding="20dp"
+                android:text="Male"
+                android:background="#D5DADD"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:text="Female"
+                android:background="#D5DADD"/>
+        </RadioGroup>
+
+        <!-- Date of Birth (Date Picker) -->
+        <Button
+            android:id="@+id/buttonDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroupGender"
+            android:text="Select Date of Birth"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            />
+
+        <!-- Career Interests (Check Box) -->
+        <CheckBox
+            android:id="@+id/checkAcademia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonDatePicker"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="Academia"
+            android:textStyle="bold"
+            android:background="#D5DADD"/>
+
+        <CheckBox
+            android:id="@+id/checkIndustry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkAcademia"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="Industry"
+            android:textStyle="bold"
+            android:background="#D5DADD"/>
+
+        <CheckBox
+            android:id="@+id/checkBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkIndustry"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:text="Business"
+            android:textStyle="bold"
+            android:background="#D5DADD"/>
+
+        <Button
+            android:id="@+id/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBusiness"
+            android:text="CLICK HERE FOR ENTER"
+            android:layout_margin="10dp"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Button"
+            android:text="CLICK HERE FOR DETAILS"
+            android:padding="20dp" />
+    </RelativeLayout>
+</ScrollView>
